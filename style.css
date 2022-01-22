@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --transparent-blue: rgba(56, 41, 224, 0.4);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --light-grey: rgb(255, 255, 255);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-color: var(--very-pale-blue);
+}
+
+.card {
+  display: block;
+  margin: 40px auto;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 420px;
+  background-color: var(--light-grey);
+  box-shadow: var(--very-pale-blue) 10px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.summary h1 {
+  color: var(--dark-blue);
+  font-size: 1.6rem;
+  margin-top: 40px;
+  font-weight: 900;
+}
+
+.summary p {
+  color: var(--desaturated-blue);
+  max-width: 300px;
+}
+
+
+
+.annual--plan {
+  display: flex;
+  background-color: var(--very-pale-blue);
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.year--plan {
+  margin: 0 40px 0 15px;
+}
+
+.year--plan h4 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin: 0px 10px 5px 0;
+}
+
+.plan--change {
+    font-size: 0.8rem;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.plan--change:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.proceed {
+  background-color: var(--bright-blue);
+  color: white;
+  box-shadow: var(--transparent-blue) 0 10px 20px 0;
+  border: none;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 10px;
+}
+
+.proceed:hover {
+  opacity: 0.7;
+}
+
+.order--cancel {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px 0px 30px 0;
+}
+
+.order--cancel:hover {
+    opacity: 0.7;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+}
+@media screen and (min-width: 375px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+}
+
